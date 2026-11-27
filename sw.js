@@ -1,4 +1,4 @@
-const CACHE = 'hankoh-11902fd21e';
+const CACHE = 'hankoh-0bc0d6d8c5';
 const SHELL = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
