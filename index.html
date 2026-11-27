@@ -86,7 +86,7 @@ a { color: var(--ink) }
 
 main { padding-block: 40px 120px }
 /* launch screen: covers the app until the first data arrives, then fades out */
-#splash { position: fixed; inset: 0; z-index: 100; background: linear-gradient(to bottom, #FFFFFF, #CCCCCC); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; transition: opacity .3s ease }
+#splash { position: fixed; inset: 0; z-index: 100; background: linear-gradient(to bottom, #FFFFFF, 70%, #CCCCCC);   /* 70% hint: the colour change happens lower down */ display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; transition: opacity .3s ease }
 #splash.out { opacity: 0; pointer-events: none }
 .splash-logo { width: 128px; height: auto; display: block }   /* splash.png is 3x: symbol + '뜨무' speech bubble */
 @media (prefers-reduced-motion: reduce) { #splash { transition: none } }
